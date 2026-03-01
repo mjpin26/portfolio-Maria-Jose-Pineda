@@ -5,7 +5,7 @@
 
 
 <template>
-  <h1 class="text-2xl">Proyectos</h1>
+  <h1 class="text-2xl"></h1>
 </template>
 
 <style scoped>
