@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 
     
     <header class="fixed top-0 left-0 right-0 bg-transparent">
-      <nav class="mx-auto max-w-5xl px-4 py-3 flex gap-2">
+      <<nav class="w-full px-4 py-3 flex gap-2 justify-start">
 
         <Button asChild variant="ghost">
           <RouterLink

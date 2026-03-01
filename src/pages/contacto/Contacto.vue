@@ -14,7 +14,7 @@ import { Mail, Instagram, X } from "lucide-vue-next"
   <section class="w-full py-12 bg-white">
     <div class="mx-auto max-w-5xl px-4">
       <h2 class="text-3xl font-bold text-gray-900 mb-10 text-center">
-        ¿Tienes una duda?
+        ¿Tienes alguna duda?
       </h2>
 
       <form class="flex flex-col lg:flex-row gap-8 items-stretch">
