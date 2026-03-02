@@ -27,24 +27,27 @@ export const router = createRouter({
           name: "sobreMi", 
           component: SobreMi 
         },
-        {
+       {
           path: "proyectos",
-          component: ProyectosLayout,
+          component: () => import("@/pages/proyectos/Layout.vue"),
           children: [
-            { path: "", 
-              name: "proyectos", 
-              component: Proyectos },
-            { path: "diseño", 
-              name: "proyectos-diseño", 
-              component: Diseño },
-            { path: "ilustracion", 
-              name: "proyectos-ilustracion", 
-              component: Ilustracion },
-            { path: "audiovisuales", 
-              name: "proyectos-audiovisuales", 
-              component: Audiovisuales },
+            {
+              path: "",
+              name: "proyectos",
+              component: () => import("@/pages/proyectos/Proyectos.vue"),
+            },
+            {
+              path: ":categoria(diseño|ilustracion|audiovisuales)",
+              name: "coleccion",
+              component: () => import("@/pages/proyectos/Coleccion.vue"),
+            },
+            {
+              path: ":categoria(diseño|ilustracion|audiovisuales)/:slug",
+              name: "coleccion-detalle",
+              component: () => import("@/pages/proyectos/ColeccionDetalle.vue"),
+            },
           ],
-        }, 
+        },
         { path: "contacto", 
           name: "contacto", 
           component: Contacto },

@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
   <div class="min-h-screen flex flex-col">
 
     
-    <header class="fixed top-0 left-0 right-0 bg-transparent">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-transparent">
       <<nav class="w-full px-4 py-3 flex gap-2 justify-start">
 
         <Button asChild variant="ghost">
@@ -45,7 +45,7 @@ import { Button } from "@/components/ui/button"
       </nav>
     </header>
 
-    <main class="mx-auto max-w-5xl w-full px-4 flex-1 py-8">
+    <main class="mx-auto max-w-5xl w-full px-4 flex-1 pt-16 pb-8">
       <RouterView />
     </main>
   </div>
