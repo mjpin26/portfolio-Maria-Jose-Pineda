@@ -21,7 +21,6 @@ export function usePaginacionColeccion<T>(lista: ComputedRef<T[]>, itemsPorPagin
     }
   }
 
-  // Como Simpsons: si cambia la lista (cambiar categoría), vuelve a 1
   watch(lista, () => {
     paginaActual.value = 1
   })

@@ -38,7 +38,18 @@ const { paginaActual, totalPaginas, itemsPaginados, numerosPagina, irAPagina } =
           @click="router.push(`/proyectos/${categoria}/${proyecto.slug}`)"
         >
          
-          <div class="w-[380px] h-[300px] mt-3 bg-[#ffde00] rounded-t-md border border-black" />
+          <img
+            v-if="proyecto.imagen"
+            :src="proyecto.imagen"
+            :alt="proyecto.titulo"
+            class="w-[380px] h-[300px] mt-3 rounded-t-md border object-cover"
+            loading="lazy"
+            />
+
+            <div
+            v-else
+            class="w-[380px] h-[300px] mt-3 bg-[#ffde00] rounded-t-md border"
+            />
 
           <h2 class="font-medium text-lg">{{ proyecto.titulo }}</h2>
           <p class="text-sm text-center px-4 opacity-90">
