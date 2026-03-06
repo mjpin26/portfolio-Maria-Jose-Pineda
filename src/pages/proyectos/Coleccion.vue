@@ -30,12 +30,12 @@ const { paginaActual, totalPaginas, itemsPaginados, numerosPagina, irAPagina } =
    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mx-auto">
       <Card
         v-for="proyecto in itemsPaginados"
-        :key="proyecto.slug"
+        :key="proyecto.id"
         class="cursor-pointer w-[420px] h-[480px] hover:bg-[#c9c9c9] hover:text-white transition"
       >
         <CardContent
           class="flex flex-col items-center gap-2 w-full px-0"
-          @click="router.push(`/proyectos/${categoria}/${proyecto.slug}`)"
+          @click="router.push(`/proyectos/${categoria}/${proyecto.id}`)"
         >
          
           <img
@@ -103,3 +103,8 @@ const { paginaActual, totalPaginas, itemsPaginados, numerosPagina, irAPagina } =
     </div>
   </div>
 </template>
+
+
+<style scoped>
+
+</style>

@@ -30,3 +30,6 @@ function exit() {
     <RouterView />
   </div>
 </template>
+<style scoped>
+
+</style>
