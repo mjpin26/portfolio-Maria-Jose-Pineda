@@ -23,7 +23,7 @@ import { Button } from "@/components/ui/button"
             to="/sobreMi"
             class="rounded-md px-3 py-2 transition"
             active-class="bg-black/10"
-          >SobreMi</RouterLink>
+          >Sobre Mi</RouterLink>
         </Button>
 
         <Button asChild variant="ghost">

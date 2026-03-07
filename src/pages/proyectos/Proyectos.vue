@@ -23,7 +23,7 @@ import { router } from "@/router"
         >
           <div class="w-full h-70 rounded-md bg-gray-200"></div>
           <h2 class="font-semibold text-xl">Diseño</h2>
-          <p class="text-sm text-gray-600">Branding y editorial</p>
+          <p class="text-sm text-gray-600">Branding & editorial</p>
         </CardContent>
       </Card>
 
@@ -35,7 +35,7 @@ import { router } from "@/router"
         >
           <div class="w-full h-70 rounded-md bg-gray-200"></div>
           <h2 class="font-semibold text-xl">Ilustración</h2>
-          <p class="text-sm text-gray-600">Arte digital y tradicional</p>
+          <p class="text-sm text-gray-600">Arte digital & tradicional</p>
         </CardContent>
       </Card>
 
@@ -47,7 +47,7 @@ import { router } from "@/router"
         >
           <div class="w-full h-70 rounded-md bg-gray-200"></div>
           <h2 class="font-semibold text-xl">Medios audiovisuales</h2>
-          <p class="text-sm text-gray-600">Fotografía y cortometrajes.</p>
+          <p class="text-sm text-gray-600">Fotografías & Cortometrajes.</p>
         </CardContent>
       </Card>
     </div>

@@ -6,6 +6,8 @@ import Carrusimaginum from "@/components/Carrusimaginum.vue"
 import { Button } from "@/components/ui/button"
 import carouselImagenes from "@/components/carouselImagenes.vue"
 import { coleccionProyectos } from "@/data/composables/coleccion-proyectos"
+import { textosProyectos } from "@/data/composables/textosProyectos"
+
 
 const route = useRoute()
 const router = useRouter()
@@ -15,6 +17,11 @@ const id = computed(() => route.params.slug as string)
 
 const proyecto = computed(() =>
   coleccionProyectos.find((p) => p.categoria === categoria.value && p.id === id.value)
+)
+
+const { miniDescripcion } = textosProyectos(
+  () => categoria.value,
+  () => id.value
 )
 
 function volverACategoria() {
@@ -50,8 +57,9 @@ function salirAProyectos() {
     </div>
 
     <div class="max-w-3xl leading-relaxed opacity-90">
-      <p v-if="proyecto.texto">{{ proyecto.texto }}</p>
-      <p v-else>(Mini descripcion)</p>
+     <p class="whitespace-pre-line text-sm md:text-base leading-relaxed opacity-90">
+        {{ miniDescripcion }}
+      </p>
     </div>
 
     <div v-if="proyecto?.basePath && proyecto.carousel?.length" class="flex justify-center mt-8">
@@ -64,12 +72,12 @@ function salirAProyectos() {
 </div>
 
     <div v-else class="opacity-70">
-      Este proyecto aún no tiene el carrusel cargado(LLORA FEO WAAA) .
+      Este proyecto aún no tiene el carrusel (LLORA FEO WAAA) .
     </div>
   </div>
 
   <div v-else class="w-full max-w-[1400px] mx-auto my-8 px-4">
-    <p class="opacity-80">Proyecto no encontrado que SAD .</p>
+    <p class="opacity-80">Proyecto no encontrado para nada que SAD .</p>
     <Button variant="ghost" class="mt-4" @click="salirAProyectos">
       <X class="mr-2 h-4 w-4" />
       Volver a Proyectos

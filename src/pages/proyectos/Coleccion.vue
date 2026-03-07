@@ -13,16 +13,25 @@ const lista = computed(() => coleccionProyectos.filter((p) => p.categoria === ca
 
 const { paginaActual, totalPaginas, itemsPaginados, numerosPagina, irAPagina } =
   usePaginacionColeccion(lista, 2)
+
+  const tituloCategoria = computed(() => {
+  const map: Record<string, string> = {
+    "diseño": "Diseño",
+    "ilustracion": "Ilustración",
+    "audiovisuales": "Medios audiovisuales",
+  }
+  return map[categoria.value] ?? categoria.value
+})
 </script>
 
 <template>
   <div class="flex flex-col items-center justify-center gap-8 w-full max-w-[1400px] my-8 mx-auto">
     <div class="text-center">
       <h1 class="font-bold text-xl lg:text-5xl mb-5 capitalize">
-        {{ categoria }}
+        {{ tituloCategoria }}
       </h1>
       <p class="mb-4">
-        Haz click en un proyecto para ver el detalle
+        Haz click en un proyecto para verlo en detalle.
       </p>
     </div>
 
