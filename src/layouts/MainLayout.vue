@@ -6,9 +6,9 @@ import { Button } from "@/components/ui/button"
   <div class="min-h-screen flex flex-col">
 
     
-    <header class="fixed top-0 left-0 right-0 z-50 bg-transparent">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white">
       <<nav class="w-full px-4 py-3 flex gap-2 justify-start">
-
+        
         <Button asChild variant="ghost">
           <RouterLink
             to="/"

@@ -12,41 +12,53 @@ import { router } from "@/router"
       <h1 class="font-bold text-2xl lg:text-5xl mb-3">Proyectos</h1>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 w-full max-w-[1100px]">
-      <!-- DISEÑO -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-22 w-fit mx-auto justify-center ">
+      <!-- DISEÑOOOO -->
       <Card
-        class="cursor-pointer hover:bg-gray-900/5 transition"
+        class="w-[420px] md:w-[480px] lg:w-[340px] h-[440px] cursor-pointer hover:bg-gray-900/5 transition"
       >
         <CardContent
-          class="p-6 flex flex-col items-center text-center gap-2"
+          class=" pt-2 px-6 pb-4 flex flex-col items-center text-center gap-2"
           @click="router.push('/proyectos/diseño')"
         >
-          <div class="w-full h-70 rounded-md bg-gray-200"></div>
-          <h2 class="font-semibold text-xl">Diseño</h2>
-          <p class="text-sm text-gray-600">Branding & editorial</p>
+        <img
+              src="/imagenes/proyectos/Diseño/Extracon/tarjeta02.jpg"
+              alt="Diseño"
+              class="w-full h-70 rounded-md  object-cover"
+            />
+          <h2 class="font-semibold text-xl mt-4">Diseño</h2>
+          <p class="text-sm  text-gray-600">Branding & editorial</p>
         </CardContent>
       </Card>
 
-      <!-- ILUSTRACIÓN -->
-      <Card class="cursor-pointer hover:bg-gray-900/5 transition">
+      <!-- ILUSTRACIÓN JEJEJE -->
+      <Card class="w-[420px] md:w-[480px] lg:w-[340px] h-[440px] cursor-pointer hover:bg-gray-900/5 transition">
         <CardContent
-          class="p-6 flex flex-col items-center text-center gap-2"
+          class=" pt-2 px-6 pb-4 flex flex-col items-center text-center gap-2"
           @click="router.push('/proyectos/ilustracion')"
         >
-          <div class="w-full h-70 rounded-md bg-gray-200"></div>
-          <h2 class="font-semibold text-xl">Ilustración</h2>
+        <img
+              src="/imagenes/proyectos/Ilustracion/novela/book01.jpg"
+              alt="Diseño"
+              class="w-full h-70 rounded-md object-cover"
+            />
+          <h2 class="font-semibold text-xl mt-4">Ilustración</h2>
           <p class="text-sm text-gray-600">Arte digital & tradicional</p>
         </CardContent>
       </Card>
 
-      <!-- AUDIOVISUALES -->
-      <Card class="cursor-pointer hover:bg-gray-900/5 transition">
+      <!-- AUDIOVISUALES EW -->
+      <Card class="w-[420px] md:w-[480px] lg:w-[340px] h-[440px] cursor-pointer hover:bg-gray-900/5 transition">
         <CardContent
-          class="p-6 flex flex-col items-center text-center gap-2"
+          class=" pt-2 px-6 pb-4 flex flex-col items-center text-center gap-2"
           @click="router.push('/proyectos/audiovisuales')"
         >
-          <div class="w-full h-70 rounded-md bg-gray-200"></div>
-          <h2 class="font-semibold text-xl">Medios audiovisuales</h2>
+          <img
+              src="/imagenes/proyectos/Mediosaudiovisuales/Diario/diario01.jpg"
+              alt="Diseño"
+              class="w-full h-70 rounded-md object-cover"
+            />
+          <h2 class="font-semibold text-xl mt-4">Medios audiovisuales</h2>
           <p class="text-sm text-gray-600">Fotografías & Cortometrajes.</p>
         </CardContent>
       </Card>
