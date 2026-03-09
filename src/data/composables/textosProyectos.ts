@@ -115,7 +115,7 @@ Por otra parte, en cuanto al proceso de creación, se realizó en un grupo de 4 
   
    Créditos: María José Pineda`,
 
-  "ilustracion/dibujos": 
+  "ilustracion/ilustracionespersonales": 
   `En este apartado, presento dibujos e ilustraciones personales realizadas para mi clase de Fundamentos del Dibujo sobre anatomía y perspectiva, y algunos otros personales de mi sketchbook, utilizando distintas técnicas, desde lápices de grafito, pasteles, tinta china y acuarela hasta arte digital.
   
   Créditos: María José Pineda`,

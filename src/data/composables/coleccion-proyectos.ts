@@ -122,9 +122,9 @@ export const coleccionProyectos: ProyectoColeccion[] = [
   },
    {
     categoria: "ilustracion",
-    id: "Ilustraciones personales",
+    id: "ilustracionespersonales",
     titulo: "Arte tradicional y digital 2024-2025",
-    descripcion: "Ilustraciones con tecnicas mixtas",
+    descripcion: "Ilustraciones con técnicas mixtas",
     imagen:"/imagenes/proyectos/Ilustracion/dibujos/dibujo19.jpg",
     basePath: "/imagenes/proyectos/Ilustracion/dibujos",
     carousel: ["dibujo01","dibujo02","dibujo03","dibujo04","dibujo05","dibujo6","dibujo07","dibujo08","dibujo09","dibujo10",

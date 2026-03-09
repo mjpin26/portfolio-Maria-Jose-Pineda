@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 </script>
 
 <template>
-  <div class="fixed inset-0  bg-[rgb(246,240,224)] text-black font-sans overflow-hidden">
+  <div class="fixed inset-0  bg-[rgb(255,255,255)] text-black font-sans overflow-hidden">
     <div class="h-full w-full flex flex-col justify-center items-center gap-12 text-center px-4">
       <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold pb-5 md:pb-20 z-10 transition-all">
        
