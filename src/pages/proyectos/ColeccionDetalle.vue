@@ -42,13 +42,13 @@ function salirAProyectos() {
       </div>
 
       <div class="flex gap-2">
-        <Button class="bg-[#6d31ee] hover:bg-[#b88bff] transition-colors" 
+        <Button class="rounded-full bg-[#6d31ee] hover:bg-[#b88bff] transition-colors" 
          @click="volverACategoria">
           <ArrowLeft class="mr-2 h-4 w-4" />
           Volver
         </Button>
 
-        <Button class="bg-[#6d31ee] hover:bg-[#b88bff] transition-colors" 
+        <Button class="rounded-full bg-[#6d31ee] hover:bg-[#b88bff] transition-colors" 
         @click="salirAProyectos">
          
           Salir

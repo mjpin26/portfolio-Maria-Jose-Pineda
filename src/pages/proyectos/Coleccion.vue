@@ -29,8 +29,8 @@ const { paginaActual, totalPaginas, itemsPaginados, numerosPagina, irAPagina } =
 
 
   <div class="w-full max-w-[1400px] mx-auto mt-6 px-4 flex justify-end">
-  <Button class="bg-[#6d31ee] hover:bg-[#b88bff] transition-colors">
-    <RouterLink to="/proyectos">Exit</RouterLink>
+  <Button class="rounded-4xl bg-[#6d31ee] hover:bg-[#b88bff] transition-colors">
+    <RouterLink to="/proyectos">Salir</RouterLink>
   </Button>
 </div>
     
@@ -83,10 +83,10 @@ const { paginaActual, totalPaginas, itemsPaginados, numerosPagina, irAPagina } =
         @click="irAPagina(paginaActual - 1)"
         :disabled="paginaActual === 1"
         :class="[
-          'px-4 py-2 rounded-md font-medium transition-colors',
+          'px-4 py-2 rounded-full font-medium transition-colors',
           paginaActual === 1
-            ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
-            : 'bg-[#ffde00] hover:bg-[#999696] hover:text-white'
+            ? ' bg-gray-200 text-gray-400 cursor-not-allowed'
+            : ' bg-[#ffde00] hover:bg-[#999696] hover:text-white'
         ]"
       >
         Anterior
@@ -97,7 +97,7 @@ const { paginaActual, totalPaginas, itemsPaginados, numerosPagina, irAPagina } =
         :key="pagina"
         @click="irAPagina(pagina)"
         :class="[
-          'w-10 h-10 rounded-md font-medium transition-colors',
+          'w-10 h-10 rounded-full font-medium transition-colors',
           paginaActual === pagina
             ? 'bg-[#9f9f9f] text-white'
             : 'bg-[#ffde00] hover:bg-[#888888] hover:text-white'
@@ -110,7 +110,7 @@ const { paginaActual, totalPaginas, itemsPaginados, numerosPagina, irAPagina } =
         :disabled="paginaActual === totalPaginas"
         @click="irAPagina(paginaActual + 1)"
         :class="[
-          'px-4 py-2 rounded-md font-medium transition-colors',
+          'px-4 py-2 rounded-full font-medium transition-colors',
           paginaActual === totalPaginas
             ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
             : 'bg-[#ffde00] hover:bg-[#868686] hover:text-white'

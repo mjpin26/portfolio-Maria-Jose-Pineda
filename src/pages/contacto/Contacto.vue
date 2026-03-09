@@ -13,7 +13,7 @@ import { Mail, Instagram, X } from "lucide-vue-next"
 <template>
   <section class="w-full py-12 bg-white">
     <div class="mx-auto max-w-5xl px-4">
-      <h2 class="text-3xl font-bold text-gray-900 mb-10 text-center">
+      <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-10 text-center">
         ¿Tienes alguna duda?
       </h2>
 
@@ -73,7 +73,7 @@ import { Mail, Instagram, X } from "lucide-vue-next"
         <div class="mt-6 flex justify-end">
             <Button
               type="submit"
-              class="w-auto bg-[rgb(106,90,205)] hover:bg-[rgb(88,75,171)] text-white px-10"
+              class="rounded-full w-auto bg-[rgb(106,90,205)] hover:bg-[rgb(88,75,171)] text-white px-10"
             >
               Enviar
             </Button>

@@ -9,7 +9,7 @@ import { router } from "@/router"
 <template>
     <div class="flex flex-col items-center justify-center gap-8 w-full my-8 mx-auto">
     <div class="text-center">
-      <h1 class="font-bold text-2xl lg:text-5xl mb-3">Proyectos</h1>
+      <h1 class="font-bold text-4xl lg:text-5xl mb-3">Proyectos</h1>
     </div>
 
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-22 w-fit mx-auto justify-center ">

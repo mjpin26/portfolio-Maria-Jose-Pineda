@@ -1,3 +1,5 @@
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300..700&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -74,6 +76,11 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, 
+  -apple-system, "Segoe UI", Roboto, Arial, 
+  "Noto Sans", "Apple Color Emoji", 
+  "Segoe UI Emoji";
 }
 
 .dark {
@@ -115,6 +122,7 @@
     @apply border-border outline-ring/50;
   }
   body {
+    font-family: var(--font-sans);
     @apply bg-background text-foreground;
   }
 }

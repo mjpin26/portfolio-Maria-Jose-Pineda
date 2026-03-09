@@ -20,7 +20,7 @@ import { Button } from "@/components/ui/button"
       <div class="z-10">
         <Button
           asChild
-          class="bg-[#e5570b] md:py-5  md:px-6 md:text-lg hover:bg-[rgba(229,66,6,0.83)] transition-all"
+          class="rounded-4xl bg-[#e5570b] md:py-5  md:px-6 md:text-lg hover:bg-[rgba(229,66,6,0.83)] transition-all"
         >
           <RouterLink to="/sobreMi">¡Comencemos!</RouterLink>
         </Button>

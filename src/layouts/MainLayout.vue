@@ -7,9 +7,9 @@ import { Button } from "@/components/ui/button"
 
     
     <header class="fixed top-0 left-0 right-0 z-50 bg-white">
-      <<nav class="w-full px-4 py-3 flex gap-2 justify-start">
+      <nav class="w-full px-4 py-3 flex gap-2 justify-start">
         
-        <Button asChild variant="ghost">
+        <Button asChild variant="ghost"class="!rounded-full" >
           <RouterLink
             to="/"
             class="rounded-md px-3 py-2 transition"
@@ -18,7 +18,7 @@ import { Button } from "@/components/ui/button"
           > Home </RouterLink>
         </Button>
 
-        <Button asChild variant="ghost">
+        <Button asChild variant="ghost"class="!rounded-full">
           <RouterLink
             to="/sobreMi"
             class="rounded-md px-3 py-2 transition"
@@ -26,7 +26,7 @@ import { Button } from "@/components/ui/button"
           >Sobre Mi</RouterLink>
         </Button>
 
-        <Button asChild variant="ghost">
+        <Button asChild variant="ghost"class="!rounded-full">
           <RouterLink
             to="/proyectos"
             class="rounded-md px-3 py-2 transition"
@@ -34,7 +34,7 @@ import { Button } from "@/components/ui/button"
           > Proyectos </RouterLink>
         </Button>
 
-        <Button asChild variant="ghost">
+        <Button asChild variant="ghost"class="!rounded-full">
           <RouterLink
             to="/contacto"
             class="rounded-md px-3 py-2 transition"
