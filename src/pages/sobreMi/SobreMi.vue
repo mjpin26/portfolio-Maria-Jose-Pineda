@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card"
+import { Globe, Heart, Sparkles } from "lucide-vue-next"
+import { Button } from "@/components/ui/button"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { SobreMi } from "@/data/composables/SobreMi"
 import { ChevronDown } from "lucide-vue-next"
@@ -34,7 +37,64 @@ const { secciones } = SobreMi()
           persona trabajadora, responsable, detallista e innovadora, que está lista para asumir nuevos retos que me permitan crecer
           tanto personal como profesionalmente.
         </p>
+
+        <div class="flex flex-wrap gap-3 pt-2">
+  <HoverCard :open-delay="120">
+    <HoverCardTrigger as-child>
+      <Button
+        variant="secondary"
+        class="pill-info rounded-full px-5"
+      >
+        <Globe class="h-4 w-4 mr-2" />
+        Nacionalidad
+      </Button>
+    </HoverCardTrigger>
+    <HoverCardContent class="hc-content w-72">
+      <p class="text-sm leading-relaxed opacity-90">
+        Hondureña
+      </p>
+    </HoverCardContent>
+  </HoverCard>
+
+  <HoverCard :open-delay="120">
+    <HoverCardTrigger as-child>
+      <Button
+        variant="secondary"
+        class="pill-info rounded-full px-5"
+      >
+        <Heart class="h-4 w-4 mr-2" />
+        Hobbies
+      </Button>
+    </HoverCardTrigger>
+    <HoverCardContent class="hc-content w-72">
+      <ul class="text-sm list-disc pl-5 space-y-1 opacity-90">
+        <li>Cocinar</li>
+        <li> Ver K-dramas</li>
+        <li>Hacer manualidades</li>
+      </ul>
+    </HoverCardContent>
+  </HoverCard>
+
+  <HoverCard :open-delay="120">
+    <HoverCardTrigger as-child>
+      <Button
+        variant="secondary"
+        class="pill-info rounded-full px-5"
+      >
+        <Sparkles class="h-4 w-4 mr-2" />
+        Deseos
+      </Button>
+    </HoverCardTrigger>
+    <HoverCardContent class="hc-content w-72">
+      <p class="text-sm leading-relaxed opacity-90">
+        ¡Me gustaría viajar por el mundo!
+      </p>
+    </HoverCardContent>
+  </HoverCard>
+</div>
       </div>
+
+      
     </div>
 
     <div class="flex justify-center">
@@ -79,5 +139,19 @@ const { secciones } = SobreMi()
 .accordion-item:hover {
   border-color: rgba(109, 49, 238, 0.55);
   border-width: 2px;
+}
+.pill-info {
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.pill-info:hover {
+  color: white;
+  transform: translateY(-1px);
+  background: #ac28b5;
+  
+}
+
+.hc-content {
+  border-radius: 16px;
 }
 </style>
