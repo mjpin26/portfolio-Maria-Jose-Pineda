@@ -8,7 +8,7 @@ import { Mail, Instagram, Linkedin, MapPin } from "lucide-vue-next"
 </script>
 
 <template>
-  <section class="w-full py-12 bg-white">
+  <section class="w-full py-12">
     <div class="mx-auto max-w-5xl px-4">
       <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-10 text-center">
         ¿Tienes alguna duda?
@@ -52,7 +52,7 @@ import { Mail, Instagram, Linkedin, MapPin } from "lucide-vue-next"
           <div class="mt-6 flex justify-end">
             <Button
               type="submit"
-              class="rounded-full w-auto bg-[rgb(106,90,205)] hover:bg-[rgb(88,75,171)] text-white px-10"
+              class="rounded-full w-auto bg-[#fa6311] hover:bg-[#da6221] text-white px-10"
             >
               Enviar
             </Button>
@@ -65,7 +65,7 @@ import { Mail, Instagram, Linkedin, MapPin } from "lucide-vue-next"
  
   <footer
   class="relative left-1/2 right-1/2 w-screen -ml-[50vw] -mr-[50vw]
-        bg-[#392b58] text-gray-300 py-16 md:py-20 -mb-8"
+        bg-[#0ac4bb7b] text-gray-300 py-16 md:py-20 -mb-8"
 >
   <div class="flex flex-col md:flex-row md:justify-around gap-8 max-w-3xl mx-auto px-4">
    
@@ -93,7 +93,7 @@ import { Mail, Instagram, Linkedin, MapPin } from "lucide-vue-next"
     </div>
 
    
-    <div class="space-y-4 text-center md:text-left text-gray-400">
+    <div class="space-y-4 text-center md:text-left text-black">
       <h3 class="text-xl font-bold text-white">Sígueme</h3>
 
       <div class="flex gap-8 justify-center md:justify-start">
@@ -114,9 +114,9 @@ import { Mail, Instagram, Linkedin, MapPin } from "lucide-vue-next"
         </a>
       </div>
 
-      <p class="text-sm text-gray-500">
-       <span class="text-gray-300">@maria.pin06</span> · 
-        <span class="text-gray-300">mariapin</span>
+      <p class="text-sm text-black">
+       <span class="text-black">@maria.pin06</span> · 
+        <span class="text-black">mariapin</span>
       </p>
     </div>
   </div>

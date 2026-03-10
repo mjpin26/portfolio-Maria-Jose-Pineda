@@ -99,7 +99,7 @@ const { secciones } = SobreMi()
 
     <div class="flex justify-center">
       <div class="w-full max-w-3xl">
-        <Accordion type="multiple" collapsible class="space-y-3">
+        <Accordion type="multiple" collapsible class="space-y-3 backdrop-blur-xl">
           <AccordionItem
             v-for="s in secciones"
             :key="s.key"
@@ -152,19 +152,24 @@ const { secciones } = SobreMi()
 .sobre-mi :deep([data-state="open"] .mi-chevron) {
   transform: rotate(180deg);
 }
+.accordion-item {
+  border-color: #cfcacaae;
+  border-width: 2px;
+}
 
 .accordion-item:hover {
-  border-color: rgba(109, 49, 238, 0.55);
+  border-color: #f96f25f0;
   border-width: 2px;
 }
 .pill-info {
   transition: transform 200ms ease, box-shadow 200ms ease;
+
 }
 
 .pill-info:hover {
   color: white;
   transform: translateY(-1px);
-  background: #ac28b5;
+  background: #f96f25f0;
   
 }
 

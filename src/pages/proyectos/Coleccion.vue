@@ -29,7 +29,7 @@ const { paginaActual, totalPaginas, itemsPaginados, numerosPagina, irAPagina } =
 
 
   <div class="w-full max-w-[1400px] mx-auto mt-6 px-4 flex justify-end">
-  <Button class="rounded-4xl bg-[#6d31ee] hover:bg-[#b88bff] transition-colors">
+  <Button class="rounded-4xl bg-[#fa6311] hover:bg-[#fa6311a7] transition-colors">
     <RouterLink to="/proyectos">Salir</RouterLink>
   </Button>
 </div>
@@ -49,7 +49,7 @@ const { paginaActual, totalPaginas, itemsPaginados, numerosPagina, irAPagina } =
       <Card
         v-for="proyecto in itemsPaginados"
         :key="proyecto.id"
-        class="cursor-pointer w-[460px] h-[480px] hover:bg-[#c9c9c9] hover:text-white transition"
+        class=" cursor-pointer w-[460px] h-[480px] rounded-2xl border border-grey bg-white/50 backdrop-blur-xl  hover:bg-gray-900/5 "
       >
         <CardContent
           class="flex flex-col items-center gap-2 w-full px-0 "
@@ -66,7 +66,7 @@ const { paginaActual, totalPaginas, itemsPaginados, numerosPagina, irAPagina } =
 
             <div
             v-else
-            class="w-[400px] h-[320px] mt-3 bg-[#ffde00] rounded-t-md border"
+            class="w-[400px] h-[320px] mt-3 bg-[#fa6311] rounded-t-md border"
             />
 
           <h2 class="font-medium text-lg mt-4">{{ proyecto.titulo }}</h2>
@@ -86,7 +86,7 @@ const { paginaActual, totalPaginas, itemsPaginados, numerosPagina, irAPagina } =
           'px-4 py-2 rounded-full font-medium transition-colors',
           paginaActual === 1
             ? ' bg-gray-200 text-gray-400 cursor-not-allowed'
-            : ' bg-[#ffde00] hover:bg-[#999696] hover:text-white'
+            : ' bg-[#0ac4ba] hover:bg-[#0a7c76] hover:text-white'
         ]"
       >
         Anterior
@@ -99,8 +99,8 @@ const { paginaActual, totalPaginas, itemsPaginados, numerosPagina, irAPagina } =
         :class="[
           'w-10 h-10 rounded-full font-medium transition-colors',
           paginaActual === pagina
-            ? 'bg-[#9f9f9f] text-white'
-            : 'bg-[#ffde00] hover:bg-[#888888] hover:text-white'
+            ? 'bg-[#0a7c76] text-white'
+            : 'bg-[#0ac4ba] hover:bg-[#0a7c76] hover:text-white'
         ]"
       >
         {{ pagina }}
@@ -113,7 +113,7 @@ const { paginaActual, totalPaginas, itemsPaginados, numerosPagina, irAPagina } =
           'px-4 py-2 rounded-full font-medium transition-colors',
           paginaActual === totalPaginas
             ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
-            : 'bg-[#ffde00] hover:bg-[#868686] hover:text-white'
+            : 'bg-[#0ac4ba] hover:bg-[#0a7c76] hover:text-white'
         ]"
       >
         Siguiente

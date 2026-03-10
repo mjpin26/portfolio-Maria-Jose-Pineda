@@ -3,7 +3,8 @@ import { Button } from "@/components/ui/button"
 </script>
 
 <template>
-  <div class="min-h-screen flex flex-col">
+  
+ <div class="min-h-screen flex flex-col bg-gradient-to-b from-white via-[#ffffff] to-[#bdefe5] text-black">
 
     
     <header class="fixed top-0 left-0 right-0 z-50 bg-white">
@@ -46,6 +47,7 @@ import { Button } from "@/components/ui/button"
     </header>
 
     <main class="mx-auto max-w-5xl w-full px-4 flex-1 pt-16 pb-0">
+      
       <RouterView />
     </main>
   </div>

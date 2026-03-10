@@ -15,7 +15,7 @@ import { router } from "@/router"
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-22 w-fit mx-auto justify-center ">
       <!-- DISEÑOOOO -->
       <Card
-        class="w-[420px] md:w-[480px] lg:w-[340px] h-[440px] cursor-pointer hover:bg-gray-900/5 transition"
+        class="w-[420px] md:w-[480px] lg:w-[340px] h-[440px] cursor-pointer bg-white/50 backdrop-blur-xl  hover:bg-gray-900/5 transition"
       >
         <CardContent
           class=" pt-2 px-6 pb-4 flex flex-col items-center text-center gap-2"
@@ -32,7 +32,7 @@ import { router } from "@/router"
       </Card>
 
       <!-- ILUSTRACIÓN JEJEJE -->
-      <Card class="w-[420px] md:w-[480px] lg:w-[340px] h-[440px] cursor-pointer hover:bg-gray-900/5 transition">
+      <Card class="w-[420px] md:w-[480px] lg:w-[340px] h-[440px] cursor-pointer bg-white/50 backdrop-blur-xl  hover:bg-gray-900/5 transition">
         <CardContent
           class=" pt-2 px-6 pb-4 flex flex-col items-center text-center gap-2"
           @click="router.push('/proyectos/ilustracion')"
@@ -48,7 +48,7 @@ import { router } from "@/router"
       </Card>
 
       <!-- AUDIOVISUALES EW -->
-      <Card class="w-[420px] md:w-[480px] lg:w-[340px] h-[440px] cursor-pointer hover:bg-gray-900/5 transition">
+      <Card class="w-[420px] md:w-[480px] lg:w-[340px] h-[440px] cursor-pointer bg-white/50 backdrop-blur-xl  hover:bg-gray-900/5 transition">
         <CardContent
           class=" pt-2 px-6 pb-4 flex flex-col items-center text-center gap-2"
           @click="router.push('/proyectos/audiovisuales')"

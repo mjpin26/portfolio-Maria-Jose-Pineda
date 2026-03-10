@@ -4,7 +4,7 @@ import { useRoute, useRouter } from "vue-router"
 import { ArrowLeft, X } from "lucide-vue-next"
 import Carrusimaginum from "@/components/Carrusimaginum.vue"
 import { Button } from "@/components/ui/button"
-import carouselImagenes from "@/components/carouselImagenes.vue"
+
 import { coleccionProyectos } from "@/data/composables/coleccion-proyectos"
 import { textosProyectos } from "@/data/composables/textosProyectos"
 
@@ -42,13 +42,13 @@ function salirAProyectos() {
       </div>
 
       <div class="flex gap-2">
-        <Button class="rounded-full bg-[#6d31ee] hover:bg-[#b88bff] transition-colors" 
+        <Button class="rounded-full bg-[#fa6311] hover:bg-[#fa6311a7] transition-colors" 
          @click="volverACategoria">
           <ArrowLeft class="mr-2 h-4 w-4" />
           Volver
         </Button>
 
-        <Button class="rounded-full bg-[#6d31ee] hover:bg-[#b88bff] transition-colors" 
+        <Button class="rounded-full bg-[#fa6311] hover:bg-[#fa6311a7] transition-colors" 
         @click="salirAProyectos">
          
           Salir

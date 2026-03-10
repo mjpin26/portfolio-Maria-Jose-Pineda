@@ -53,8 +53,8 @@ const props = withDefaults(
     </CarouselContent>
 
    
-    <CarouselPrevious class="bg-gray-900 text-white h-9 w-9 md:h-10 md:w-10 left-2 md:-left-12" />
-    <CarouselNext class="bg-gray-900 text-white h-9 w-9 md:h-10 md:w-10 right-2 md:-right-12" />
+    <CarouselPrevious class="bg-[#0a7c76] text-white h-9 w-9 md:h-10 md:w-10 left-2 md:-left-12" />
+    <CarouselNext class="bg-[#0a7c76] text-white h-9 w-9 md:h-10 md:w-10 right-2 md:-right-12" />
   </Carousel>
 </template>
 
