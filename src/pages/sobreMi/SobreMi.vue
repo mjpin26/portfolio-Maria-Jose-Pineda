@@ -75,7 +75,7 @@ const { secciones } = SobreMi()
     </HoverCardContent>
   </HoverCard>
 
-  <HoverCard :open-delay="120">
+  <HoverCard :open-delay="100">
     <HoverCardTrigger as-child>
       <Button
         variant="secondary"
@@ -113,13 +113,30 @@ const { secciones } = SobreMi()
               </div>
               </AccordionTrigger>
 
-            <AccordionContent class="px-6 pb-5">
-              <ul class="list-disc pl-5 space-y-2 text-sm md:text-base opacity-90">
-                <li v-for="(item, idx) in s.contenido" :key="idx">
-                  {{ item }}
-                </li>
-              </ul>
-            </AccordionContent>
+         <AccordionContent class="px-4 pb-5">
+          <div v-if="s.programas?.length" class="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-2 items-start">
+            <ul class="list-disc pl-5 space-y-2 text-sm md:text-base opacity-90">
+              <li v-for="(item, idx) in s.contenido" :key="idx">
+                {{ item }}
+              </li>
+            </ul>
+
+            <div class="grid grid-cols-2 gap-2 justify-items-start">
+              <img
+                v-for="(p, i) in s.programas.slice(0, 4)"
+                :key="i"
+                :src="p.icono"
+                class="w-10 h-10 md:w-11 md:h-11"
+              />
+            </div>
+          </div>
+
+          <ul v-else class="list-disc pl-5 space-y-2 text-sm md:text-base opacity-90">
+            <li v-for="(item, idx) in s.contenido" :key="idx">
+              {{ item }}
+            </li>
+          </ul>
+</AccordionContent>
           </AccordionItem>
         </Accordion>
       </div>

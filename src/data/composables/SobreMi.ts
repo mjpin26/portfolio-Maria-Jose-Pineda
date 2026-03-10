@@ -16,6 +16,12 @@ export function SobreMi() {
         "Diseño gráfico",
         "Branding e Identidad Visual",
       ],
+       programas: [
+        { nombre: "Illustrator", icono: "/svg/programas/adobe-illustrator-icon.svg" },
+        { nombre: "Photoshop", icono: "/svg/programas/adobe-photoshop-icon.svg" },
+        { nombre: "Figma", icono: "/svg/programas/figma-icon.svg" },
+        { nombre: "Indesign", icono: "/svg/programas/indesign-icon.svg" },
+  ],
      
     },
     
@@ -23,23 +29,23 @@ export function SobreMi() {
       key: "educacion" as const,
       titulo: "Educación",
       contenido: [
-        "Actualmente, estudiante de Diseño y Tecnologías Creativas de la UPV",
-        "Foundations of User Experience (UX) Design - Certificado de Google",
-        "Start the UX Design Process: Empathize, Define, and Ideate - Certificado de Google",
-        "Build Wireframes and Low-Fidelity Prototypes - Certificado de Google",
+        "Estudiante de Diseño y Tecnologías Creativas de la UPV         2024",
+        "Foundations of User Experience (UX) Design - Certificado de Google      2024",
+        "Start the UX Design Process: Empathize, Define, and Ideate - Certificado de Google    2024",
+        "Build Wireframes and Low-Fidelity Prototypes - Certificado de Google      2025",
         
         
       ],
     },
     {
-      key: "idiomas" as const,
+      key: "idiomas",
       titulo: "Idiomas",
       contenido: [
-        "Español (Nativo)",
-        "Inglés (Cambridge FCE English B2)",
-        "Francés (DELF B1)",
-      ],
-    },
+        "Español: Idioma nativo",
+        "Inglés: Cambridge English Certificate FCE B2",
+        "Francés: DELF B1",
+  ],
+},
   ])
 
   function setSeccion(key: SobreMiSeccion) {

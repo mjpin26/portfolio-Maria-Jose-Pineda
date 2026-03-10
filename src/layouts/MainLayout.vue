@@ -45,7 +45,7 @@ import { Button } from "@/components/ui/button"
       </nav>
     </header>
 
-    <main class="mx-auto max-w-5xl w-full px-4 flex-1 pt-16 pb-8">
+    <main class="mx-auto max-w-5xl w-full px-4 flex-1 pt-16 pb-0">
       <RouterView />
     </main>
   </div>
