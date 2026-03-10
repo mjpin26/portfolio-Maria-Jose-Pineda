@@ -49,8 +49,8 @@ const { secciones } = SobreMi()
         Nacionalidad
       </Button>
     </HoverCardTrigger>
-    <HoverCardContent class="hc-content w-72">
-      <p class="text-sm leading-relaxed opacity-90">
+    <HoverCardContent class="hc-content w-40 ">
+      <p class="text-sm leading-relaxed opacity-90 text-center">
         Hondureña
       </p>
     </HoverCardContent>
@@ -66,7 +66,7 @@ const { secciones } = SobreMi()
         Hobbies
       </Button>
     </HoverCardTrigger>
-    <HoverCardContent class="hc-content w-72">
+    <HoverCardContent class="hc-content w-50">
       <ul class="text-sm list-disc pl-5 space-y-1 opacity-90">
         <li>Cocinar</li>
         <li> Ver K-dramas</li>
@@ -85,8 +85,8 @@ const { secciones } = SobreMi()
         Deseos
       </Button>
     </HoverCardTrigger>
-    <HoverCardContent class="hc-content w-72">
-      <p class="text-sm leading-relaxed opacity-90">
+    <HoverCardContent class="hc-content w-65">
+      <p class="text-sm leading-relaxed opacity-90 text-center">
         ¡Me gustaría viajar por el mundo!
       </p>
     </HoverCardContent>

@@ -17,7 +17,7 @@ import { Mail, Instagram, Linkedin, MapPin } from "lucide-vue-next"
       <form class="flex flex-col lg:flex-row gap-8 items-stretch">
        
         <div
-          class="w-full lg:w-1/2 bg-white p-6 sm:p-8 lg:p-10 rounded-lg shadow-lg space-y-6 lg:space-y-8 lg:min-h-[560px]"
+          class="w-full lg:w-1/2 p-6 sm:p-8 lg:p-10 rounded-lg shadow-lg space-y-6 lg:space-y-8 lg:min-h-[560px]"
         >
           <div class="space-y-2">
             <Label for="nombre">Nombre</Label>
@@ -36,7 +36,7 @@ import { Mail, Instagram, Linkedin, MapPin } from "lucide-vue-next"
         </div>
 
         <div
-          class="w-full lg:w-1/2 bg-white p-6 sm:p-8 lg:p-10 rounded-lg shadow-lg flex flex-col lg:min-h-[560px]"
+          class="w-full lg:w-1/2  p-6 sm:p-8 lg:p-10 rounded-lg shadow-lg flex flex-col lg:min-h-[560px]"
         >
           <div class="space-y-2 flex-1">
             <Label for="mensaje">¡Escríbeme para saber más sobre ti!</Label>
@@ -65,12 +65,12 @@ import { Mail, Instagram, Linkedin, MapPin } from "lucide-vue-next"
  
   <footer
   class="relative left-1/2 right-1/2 w-screen -ml-[50vw] -mr-[50vw]
-        bg-[#0ac4bb7b] text-gray-300 py-16 md:py-20 -mb-8"
+        bg-[#75bdba3f] text-black/70 py-16 md:py-20 "
 >
   <div class="flex flex-col md:flex-row md:justify-around gap-8 max-w-3xl mx-auto px-4">
    
     <div class="space-y-4 text-center md:text-left">
-      <h3 class="text-xl font-bold text-white">Información de contacto</h3>
+      <h3 class="text-xl font-bold text-black/70">Información de contacto</h3>
 
       <div class="space-y-2">
         <a
@@ -93,8 +93,8 @@ import { Mail, Instagram, Linkedin, MapPin } from "lucide-vue-next"
     </div>
 
    
-    <div class="space-y-4 text-center md:text-left text-black">
-      <h3 class="text-xl font-bold text-white">Sígueme</h3>
+    <div class="space-y-4 text-center md:text-left text-black/70">
+      <h3 class="text-xl font-bold text-black/70">Sígueme</h3>
 
       <div class="flex gap-8 justify-center md:justify-start">
         <a
@@ -114,9 +114,9 @@ import { Mail, Instagram, Linkedin, MapPin } from "lucide-vue-next"
         </a>
       </div>
 
-      <p class="text-sm text-black">
-       <span class="text-black">@maria.pin06</span> · 
-        <span class="text-black">mariapin</span>
+      <p class="text-sm text-gray/75">
+       <span class="text-gray/75">@maria.pin06</span> · 
+        <span class="text-gray/75">mariapin</span>
       </p>
     </div>
   </div>

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 </script>
 
 <template>
-  <div class="fixed inset-0 bg-white text-black font-sans">
+  <div class="fixed inset-0 bg-gradient-to-b from-[] via-[#faeeeb] to-[#bdefe5] text-black font-sans">
 
     <div class="h-full w-full overflow-y-auto">
       <div class="min-h-full flex flex-col justify-center items-center text-center px-4 pt-24 pb-10">
