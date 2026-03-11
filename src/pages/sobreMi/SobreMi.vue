@@ -20,12 +20,12 @@ const { secciones } = SobreMi()
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
       <div class="flex justify-center lg:justify-start">
         <img
-          src="/imagenes/proyectos/Ilustracion/dibujos/dibujo01.jpg"
-          alt="Foto de perfil"
+          src="/imagenes/perfil04.jpg"
+        alt="Foto de perfil"
           class="w-[600px] h-[400px] md:w-[260px] md:h-[260px] lg:w-[420px] lg:h-[440px] rounded-2xl object-cover"
-          loading="lazy"
+        
         />
-      </div>
+   </div>
 
       <div class="space-y-3">
         <p class="text-sm md:text-base leading-relaxed opacity-90">
@@ -116,7 +116,7 @@ const { secciones } = SobreMi()
          <AccordionContent class="px-4 pb-5">
           <div v-if="s.programas?.length" class="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-2 items-start">
             <ul class="list-disc pl-5 space-y-2 text-sm md:text-base opacity-90">
-              <li v-for="(item, idx) in s.contenido" :key="idx">
+      <li v-for="(item, idx) in s.contenido" :key="idx">
                 {{ item }}
               </li>
             </ul>
@@ -132,12 +132,12 @@ const { secciones } = SobreMi()
           </div>
 
           <ul v-else class="list-disc pl-5 space-y-2 text-sm md:text-base opacity-90">
-            <li v-for="(item, idx) in s.contenido" :key="idx">
+         <li v-for="(item, idx) in s.contenido" :key="idx">
               {{ item }}
             </li>
           </ul>
 </AccordionContent>
-          </AccordionItem>
+   </AccordionItem>
         </Accordion>
       </div>
     </div>

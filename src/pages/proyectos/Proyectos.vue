@@ -8,13 +8,13 @@ import { router } from "@/router"
 
 <template>
     <div class="flex flex-col items-center justify-center gap-8 w-full my-8 mx-auto">
-    <div class="text-center">
+  <div class="text-center">
       <h1 class="font-bold text-4xl lg:text-5xl mb-3">Proyectos</h1>
     </div>
 
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-22 w-fit mx-auto justify-center ">
       <!-- DISEÑOOOO -->
-      <Card
+  <Card
         class="w-[420px] md:w-[480px] lg:w-[340px] h-[440px] cursor-pointer bg-white/50 backdrop-blur-xl  hover:bg-gray-900/5 transition"
       >
         <CardContent
@@ -26,9 +26,9 @@ import { router } from "@/router"
               alt="Diseño"
               class="w-full h-70 rounded-md  object-cover"
             />
-          <h2 class="font-semibold text-xl mt-4">Diseño</h2>
-          <p class="text-sm  text-gray-600">Branding & editorial</p>
-        </CardContent>
+          <h2 class="titulo-card mt-4">Diseño</h2>
+          <p class="subtitulo-card">Branding & editorial</p>
+     </CardContent>
       </Card>
 
       <!-- ILUSTRACIÓN JEJEJE -->
@@ -39,13 +39,13 @@ import { router } from "@/router"
         >
         <img
               src="/imagenes/proyectos/Ilustracion/novela/book01.jpg"
-              alt="Diseño"
-              class="w-full h-70 rounded-md object-cover"
+             alt="Diseño"
+          class="w-full h-70 rounded-md object-cover"
             />
-          <h2 class="font-semibold text-xl mt-4">Ilustración</h2>
-          <p class="text-sm text-gray-600">Arte digital & tradicional</p>
+          <h2 class="titulo-card mt-4">Ilustración</h2>
+          <p class="subtitulo-card">Arte digital & tradicional</p>
         </CardContent>
-      </Card>
+  </Card>
 
       <!-- AUDIOVISUALES EW -->
       <Card class="w-[420px] md:w-[480px] lg:w-[340px] h-[440px] cursor-pointer bg-white/50 backdrop-blur-xl  hover:bg-gray-900/5 transition">
@@ -58,8 +58,8 @@ import { router } from "@/router"
               alt="Diseño"
               class="w-full h-70 rounded-md object-cover"
             />
-          <h2 class="font-semibold text-xl mt-4">Medios audiovisuales</h2>
-          <p class="text-sm text-gray-600">Fotografías & Cortometrajes.</p>
+          <h2 class="titulo-card mt-4">Medios audiovisuales</h2>
+          <p class="subtitulo-card">Fotografías & Cortometrajes.</p>
         </CardContent>
       </Card>
     </div>
@@ -69,6 +69,16 @@ import { router } from "@/router"
 
 </template>
 
-<style scoped>
+ <style scoped>
+    .titulo-card {
+      font-weight: 600;
+     font-size: 1.25rem;
+      line-height: 1.75rem;
+    }
 
-</style>
+          .subtitulo-card {
+     font-size: 0.875rem;
+      line-height: 1.25rem;
+      color: #4b5563;
+          }
+  </style>

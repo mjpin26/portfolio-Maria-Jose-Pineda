@@ -4,7 +4,7 @@
 
 
 </script>
-
+ tengo que borrar esta carpeta luego
 
 
 <template>

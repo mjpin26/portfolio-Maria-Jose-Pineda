@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button"
 import { coleccionProyectos } from "@/data/composables/coleccion-proyectos"
 import { textosProyectos } from "@/data/composables/textosProyectos"
 
-
 const route = useRoute()
 const router = useRouter()
 
@@ -36,40 +35,39 @@ function salirAProyectos() {
 <template>
   <div v-if="proyecto" class="w-full max-w-[1400px] mx-auto my-8 px-4 space-y-8">
     <div class="flex items-start justify-between gap-4">
-      <div class="space-y-2">
-        <h1 class="text-2xl lg:text-5xl font-bold">{{ proyecto.titulo }}</h1>
-        <p class="opacity-80">{{ proyecto.descripcion }}</p>
+             <div class="space-y-2">
+            <h1 class="text-2xl lg:text-5xl font-bold">{{ proyecto.titulo }}</h1>
+          <p class="opacity-80">{{ proyecto.descripcion }}</p>
       </div>
 
       <div class="flex gap-2">
-        <Button class="rounded-full bg-[#fa6311] hover:bg-[#fa6311a7] transition-colors" 
-         @click="volverACategoria">
+        <Button class="btn-naranja rounded-full transition-colors" @click="volverACategoria">
           <ArrowLeft class="mr-2 h-4 w-4" />
           Volver
         </Button>
 
-        <Button class="rounded-full bg-[#fa6311] hover:bg-[#fa6311a7] transition-colors" 
-        @click="salirAProyectos">
-         
+        <Button class="btn-naranja rounded-full transition-colors" @click="salirAProyectos">
           Salir
         </Button>
       </div>
     </div>
 
     <div class="max-w-3xl leading-relaxed opacity-90">
-     <p class="whitespace-pre-line text-sm md:text-base leading-relaxed opacity-90">
+      <p class="whitespace-pre-line text-sm md:text-base leading-relaxed opacity-90">
         {{ miniDescripcion }}
       </p>
     </div>
 
     <div v-if="proyecto?.basePath && proyecto.carousel?.length" class="flex justify-center mt-8">
-  <Carrusimaginum
-  :base-path="proyecto.basePath"
-  :photos="proyecto.carousel"
-  :auto-play-delay="4000"
-  :loop="true"
-/>
-</div>
+      <Carrusimaginum
+        :base-path="proyecto.basePath"
+        :photos="proyecto.carousel"
+        :auto-play-delay="3000"
+        :loop="true"
+      />
+    </div>
+
+
 
     <div v-else class="opacity-70">
       Este proyecto aún no tiene el carrusel (LLORA FEO WAAA) .
@@ -78,10 +76,15 @@ function salirAProyectos() {
 
   <div v-else class="w-full max-w-[1400px] mx-auto my-8 px-4">
     <p class="opacity-80">Proyecto no encontrado para nada que SAD .</p>
-    <Button variant="ghost" class="mt-4" @click="salirAProyectos">
-      <X class="mr-2 h-4 w-4" />
-      Volver a Proyectos
-    </Button>
+   
   </div>
 </template>
 
+<style scoped>
+.btn-naranja {
+  background: #fa6311;
+}
+.btn-naranja:hover {
+  background: #fa6311a6;
+}
+</style>

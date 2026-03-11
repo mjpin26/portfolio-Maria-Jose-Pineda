@@ -1,6 +1,6 @@
 import { computed, ref, watch, type ComputedRef } from "vue"
 
-export function usePaginacionColeccion<T>(lista: ComputedRef<T[]>, itemsPorPagina = 2) {
+export function paginacionColeccion<T>(lista: ComputedRef<T[]>, itemsPorPagina = 2) {
   const paginaActual = ref(1)
 
   const totalPaginas = computed(() => Math.max(1, Math.ceil(lista.value.length / itemsPorPagina)))

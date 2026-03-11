@@ -2,7 +2,7 @@
 import { computed } from "vue"
 import { useRoute, useRouter } from "vue-router"
 import { Card, CardContent } from "@/components/ui/card"
-import { usePaginacionColeccion } from "@/data/composables/usePaginacionColeccion"
+import { paginacionColeccion } from "@/data/composables/paginacionColeccion"
 import { coleccionProyectos } from "@/data/composables/coleccion-proyectos"
 import Button from "@/components/ui/button/Button.vue"
 
@@ -13,12 +13,12 @@ const categoria = computed(() => route.params.categoria as string)
 const lista = computed(() => coleccionProyectos.filter((p) => p.categoria === categoria.value))
 
 const { paginaActual, totalPaginas, itemsPaginados, numerosPagina, irAPagina } =
-  usePaginacionColeccion(lista, 2)
+  paginacionColeccion(lista, 2)
 
   const tituloCategoria = computed(() => {
   const map: Record<string, string> = {
     "diseño": "Diseño",
-    "ilustracion": "Ilustración",
+   "ilustracion": "Ilustración",
     "audiovisuales": "Medios audiovisuales",
   }
   return map[categoria.value] ?? categoria.value
@@ -39,7 +39,7 @@ const { paginaActual, totalPaginas, itemsPaginados, numerosPagina, irAPagina } =
       <h1 class="font-bold text-xl lg:text-5xl mb-5 capitalize ">
         {{ tituloCategoria }}
       </h1>
-      <p class="mb-4">
+     <p class="mb-4">
         Haz click en un proyecto para verlo en detalle.
       </p>
     </div>
@@ -60,8 +60,8 @@ const { paginaActual, totalPaginas, itemsPaginados, numerosPagina, irAPagina } =
             v-if="proyecto.imagen"
             :src="proyecto.imagen"
             :alt="proyecto.titulo"
-            class="w-[400px] h-[320px] mt-2 rounded-t-md border object-cover"
-            loading="lazy"
+           class="w-[400px] h-[320px] mt-2 rounded-t-md border object-cover"
+           
             />
 
             <div
@@ -84,7 +84,7 @@ const { paginaActual, totalPaginas, itemsPaginados, numerosPagina, irAPagina } =
         :disabled="paginaActual === 1"
         :class="[
           'px-4 py-2 rounded-full font-medium transition-colors',
-          paginaActual === 1
+      paginaActual === 1
             ? ' bg-gray-200 text-gray-400 cursor-not-allowed'
             : ' bg-[#0ac4ba] hover:bg-[#0a7c76] hover:text-white'
         ]"
@@ -98,9 +98,9 @@ const { paginaActual, totalPaginas, itemsPaginados, numerosPagina, irAPagina } =
         @click="irAPagina(pagina)"
         :class="[
           'w-10 h-10 rounded-full font-medium transition-colors',
-          paginaActual === pagina
-            ? 'bg-[#0a7c76] text-white'
-            : 'bg-[#0ac4ba] hover:bg-[#0a7c76] hover:text-white'
+        paginaActual === pagina
+         ? 'bg-[#0a7c76] text-white'
+       : 'bg-[#0ac4ba] hover:bg-[#0a7c76] hover:text-white'
         ]"
       >
         {{ pagina }}

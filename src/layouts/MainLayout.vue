@@ -14,7 +14,7 @@ import { Button } from "@/components/ui/button"
           <RouterLink
             to="/"
             class="rounded-md px-3 py-2 transition"
-            active-class="bg-black/10"
+           active-class="bg-black/10"
             exact-active-class="bg-black/10"
           > Home </RouterLink>
         </Button>
@@ -30,7 +30,7 @@ import { Button } from "@/components/ui/button"
         <Button asChild variant="ghost"class="!rounded-full">
           <RouterLink
             to="/proyectos"
-            class="rounded-md px-3 py-2 transition"
+           class="rounded-md px-3 py-2 transition"
             active-class="bg-black/10"
           > Proyectos </RouterLink>
         </Button>
